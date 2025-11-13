@@ -1,0 +1,49 @@
+﻿<Window x:Class="Приложение.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Приложение"
+        mc:Ignorable="d"
+        Title="Window4" Height="495" Width="500" WindowStyle="None" Background="#FFFC6A42">
+    <Grid Background="#FFFC6A42" Height="495" Width="500" MaxHeight="495" MaxWidth="500">
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="23,434,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="23" Width="75" Click="Back_Click"/>
+        <Button x:Name="StartT" Content="Начать тест" HorizontalAlignment="Center" Margin="0,203,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="36" Width="150" FontSize="18" Click="StartT_Click"/>
+        <TextBox x:Name="Q2" HorizontalAlignment="Left" Margin="56,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Text="Как правильно объявить переменную типа char" FontFamily="Bahnschrift SemiBold" FontSize="15" />
+        <TextBox x:Name="Q3" HorizontalAlignment="Left" Margin="56,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Text="Как правильно объявить переменную типа double и присвоить ей значение" FontFamily="Bahnschrift SemiBold" FontSize="15" />
+        <TextBox x:Name="Q4" HorizontalAlignment="Left" Margin="56,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Text="Какой тип данных является логическим" FontFamily="Bahnschrift SemiBold" FontSize="15" />
+        <TextBox x:Name="Q1" HorizontalAlignment="Left" Margin="56,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Text="Как конвертировать переменную типа double в тип char " FontFamily="Bahnschrift SemiBold" FontSize="15" />
+        <ComboBox x:Name="A1" HorizontalAlignment="Left" Margin="270,45,0,0" VerticalAlignment="Top" Width="158" Height="29" FontFamily="Bahnschrift SemiBold" >
+            <ComboBoxItem Content="ConvertToChar(a);"/>
+            <ComboBoxItem Content="Convert.ToChar(a);"/>
+            <ComboBoxItem Content="Convert.Tochar(a);"/>
+            <ComboBoxItem Content="ConvertToDouble(a);"/>
+            <ComboBoxItem/>
+        </ComboBox>
+        <ComboBox x:Name="A2" HorizontalAlignment="Left" Margin="270,140,0,0" VerticalAlignment="Top" Width="158" Height="29" FontFamily="Bahnschrift SemiBold" >
+            <ComboBoxItem Content="char a;"/>
+            <ComboBoxItem Content="char a"/>
+            <ComboBoxItem Content="Tochar a;"/>
+            <ComboBoxItem Content="Char a;"/>
+            <ComboBoxItem/>
+        </ComboBox>
+        <ComboBox x:Name="A3" HorizontalAlignment="Left" Margin="270,243,0,0" VerticalAlignment="Top" Width="158" Height="29" FontFamily="Bahnschrift SemiBold" >
+            <ComboBoxItem Content="Double a = 12.3;"/>
+            <ComboBoxItem Content="Double a = 12,3;"/>
+            <ComboBoxItem Content="double a = 12,3;"/>
+            <ComboBoxItem Content="double a = 12.3;"/>
+            <ComboBoxItem/>
+        </ComboBox>
+        <ComboBox x:Name="A4" HorizontalAlignment="Left" Margin="270,337,0,0" VerticalAlignment="Top" Width="158" Height="29" FontFamily="Bahnschrift SemiBold" >
+            <ComboBoxItem Content="char"/>
+            <ComboBoxItem Content="bool"/>
+            <ComboBoxItem Content="int"/>
+            <ComboBoxItem Content="string"/>
+            <ComboBoxItem/>
+        </ComboBox>
+        <Button x:Name="Checked" Content="Проверить" HorizontalAlignment="Center" Margin="0,400,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="84" Click="Checked_Click" Visibility="Hidden"/>
+        <Button x:Name="Backed" Content="Перейти к уровням" HorizontalAlignment="Center" Margin="0,414,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="32" Width="150" Click="Backed_Click" Visibility="Hidden"/>
+        <Image x:Name="ImageTest" Source="/Тест.png" Margin="44,31,44,355"/>
+
+    </Grid>
+</Window>

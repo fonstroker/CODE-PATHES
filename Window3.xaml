@@ -1,0 +1,41 @@
+﻿<Window x:Class="Приложение.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Приложение"
+        mc:Ignorable="d"
+        Title="Window3" Height="495" Width="500" WindowStyle="None" Background="#FFFC6A42">
+    <Grid Background="#FFFC6A42" >
+        <TextBox x:Name="L1Text" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Height="164" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden"/>
+        <TextBox x:Name="TextInter" HorizontalAlignment="Left" Margin="37,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Height="142" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Text="Помогите роботу!&#xD;&#xA;Роботу не хватает двух металлический пластин (M) и семь гаек (g). Объявите целочисленные переменные M и g и сзразу присвойте им необходимые значения"/>
+        <Button x:Name="Start" Content="Начать" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="25" BorderBrush="#FFFF6237" Background="White" Height="49" Width="145" Click="Start_Click"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="27,434,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="23" Width="75" Click="Back_Click"/>
+        <Button x:Name="NextT" Content="Далее" HorizontalAlignment="Left" Margin="250,348,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" BorderBrush="#FFFF6237" Background="White" Height="28" Width="82" Click="NextT_Click"  Visibility="Hidden" />
+        <Button x:Name="BackT" Content="Назад" HorizontalAlignment="Left" Margin="155,348,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" BorderBrush="#FFFF6237" Background="White" Height="28" Width="82" Click="BackT_Click" Visibility="Hidden" />
+        <Image x:Name="Image1" HorizontalAlignment="Center" Height="146" Margin="0,189,0,0" VerticalAlignment="Top" Width="254" Source="/НапримерТипы.png" Visibility="Hidden"/>
+        <Image x:Name="Image2" Margin="142,188,142,162" Source="/НапримерПрисвоение.png" Visibility="Hidden"/>
+        <Image x:Name="Image3" Source="/НапримерПреобразование.png" Margin="85,200,85,175" Visibility="Hidden"/>
+        <Button x:Name="Test" Content="Проверить знания" HorizontalAlignment="Left" Margin="315,429,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="31" Width="159" FontSize="14" Click="Test_Click" Visibility="Hidden"/>
+        <Image x:Name="ImaPer" HorizontalAlignment="Left" Height="110" Margin="50,26,0,0" VerticalAlignment="Top" Width="425" Source="/Переменные.png"/>
+        <Button x:Name="Interac" Content="Интерактив" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="140" FontSize="14" Visibility="Hidden" Click="Interac_Click"/>
+        <TextBox x:Name="PlaceM" HorizontalAlignment="Left" Margin="37,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Height="66" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Foreground="Black" />
+        <TextBox x:Name="Placeg" HorizontalAlignment="Left" Margin="37,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Height="67" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Foreground="Black" />
+        <Button x:Name="Check" Content="Проверить" HorizontalAlignment="Left" Margin="336,296,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="118" FontSize="14" Visibility="Hidden" Click="Check_Click"/>
+        <Button x:Name="back1" Content="Вернуться" HorizontalAlignment="Left" Margin="27,434,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="22" Width="75" Click="back1_Click" Visibility="Hidden"/>
+        <Button x:Name="back2" Content="Вернуться" HorizontalAlignment="Left" Margin="27,434,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="22" Width="75" Visibility="Hidden" Click="back2_Click"/>
+        <Label x:Name="TeM" Content="Место для объявления M" HorizontalAlignment="Left" Margin="37,188,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Visibility="Hidden" FontSize="14"/>
+        <Label x:Name="Teg" Content="Место для объявления g" HorizontalAlignment="Left" Margin="37,301,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Visibility="Hidden" FontSize="14"/>
+        <Image x:Name="Rob1" HorizontalAlignment="Left" Height="272" Margin="291,20,0,0" VerticalAlignment="Top" Width="168"  Visibility="Hidden" Source="/Робот открыт.png"   />
+        <Image x:Name="Rob2" HorizontalAlignment="Left" Height="272" Margin="291,20,0,0" VerticalAlignment="Top" Width="168"  Visibility="Hidden" Source="/Робот закрыт.png"/>
+        <TextBox x:Name="TextKoster" HorizontalAlignment="Left" Margin="37,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Height="175" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Text="Помогите разжечь костер!&#xA;У нас закончились бревна, но есть металлические прутья,&#xA;присвойте целочисленной переменной костер (K) значение строковой переменной металлические прутья (M), конвертируя это значение (переменные уже объявлены)"/>
+        <TextBox x:Name="PlaceK" HorizontalAlignment="Left" Margin="37,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" Height="67" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="TeK" Content="Место для конвертирования " HorizontalAlignment="Left" Margin="37,241,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Visibility="Hidden" FontSize="14"/>
+        <Image x:Name="Kos2" Source="/огонь горит.png" Margin="329,65,36,297" Visibility="Hidden"/>
+        <Image x:Name="Kos1" Source="/огонь не горит.png" Margin="325,55,26,276" Visibility="Hidden" />
+        <Image x:Name="Tree" Source="/Бревна.jpg" Margin="315,233,26,163" Visibility="Hidden"/>
+        <Image x:Name="Metal" Source="/Прутья.jpg" Margin="315,229,26,158" Visibility="Hidden"/>
+        <Button x:Name="Check1" Content="Конвертировать" HorizontalAlignment="Left" Margin="328,351,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="136" FontSize="14" Visibility="Hidden" Click="Check1_Click"/>
+        <Button x:Name="Interac1" Content="Интерактив" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="140" FontSize="14" Visibility="Hidden" Click="Interac1_Click"/>
+    </Grid>
+</Window>

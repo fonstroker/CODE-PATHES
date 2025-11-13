@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{258C754D-2122-4FC2-9770-3730AB23614F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Приложение</RootNamespace>
+    <AssemblyName>Приложение</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Window10.xaml.cs">
+      <DependentUpon>Window10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window11.xaml.cs">
+      <DependentUpon>Window11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window12.xaml.cs">
+      <DependentUpon>Window12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window13.xaml.cs">
+      <DependentUpon>Window13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window14.xaml.cs">
+      <DependentUpon>Window14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window15.xaml.cs">
+      <DependentUpon>Window15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window16.xaml.cs">
+      <DependentUpon>Window16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window17.xaml.cs">
+      <DependentUpon>Window17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window18.xaml.cs">
+      <DependentUpon>Window18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window19.xaml.cs">
+      <DependentUpon>Window19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window2.xaml.cs">
+      <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4.xaml.cs">
+      <DependentUpon>Window4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window5.xaml.cs">
+      <DependentUpon>Window5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window6.xaml.cs">
+      <DependentUpon>Window6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window7.xaml.cs">
+      <DependentUpon>Window7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window8.xaml.cs">
+      <DependentUpon>Window8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window9.xaml.cs">
+      <DependentUpon>Window9.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Window10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window11.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window12.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window13.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window14.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window15.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window16.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window17.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window18.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window19.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Логотип для приложения.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Кнопка закрыть.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерТипы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерПрисвоение.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерПреобразование.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Переменные.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Тест.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Темы для изучения.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Магазин.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватар16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Аватарки.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NulAvatarka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Уровень1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="4Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="5Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="6Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="7Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="8Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="9Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="10Уровень.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0 очков.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1 очко.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2 очка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3 очка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="4 очков.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="5 очков.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="6 очков.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="7 очков.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="8 очков.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="10 очков.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="9 очков.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Основные инструменты и операции.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерConsoleWrite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерReadLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Рез-татConsoleWr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерАрифмОп.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="РезультатАрифм.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерУнарные.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="РезультатУнарные.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Снимок экрана 2024-05-25 212938.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Снимок экрана 2024-05-25 213146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Снимок экрана 2024-05-25 214415.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Снимок экрана 2024-05-25 214716.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Снимок экрана 2024-05-25 220505.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Снимок экрана 2024-05-25 220622.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Операторы ветвления и циклы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Напримерif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ЧислаНеРавны.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерSwitch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ПриветТом.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерWhile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="РезультатWhile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерWhDo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Результат WhDo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Напримерfor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="РезультатFor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Результатforach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Напримерforeach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Массивы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерОдномМассив.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерПодрМассив.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="РезультатРазмер.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерДвумМас.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерЗаполнениеОМ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерЗаплнДВМ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="НапримерСортировка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="РезультатСортир.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Робот-переменные1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Робот-переменные2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Робот открыт.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Робот закрыт.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="огонь горит.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="огонь не горит.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Прутья.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Бревна.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Робот не привет мир.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Робот привет мир.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Котик-вопрос.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Котик- не хочу кушать.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Котик-хочу кушать.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Робот-таблица умн до.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Робот-таблица умн.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Готовый мост.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Неготовый мост.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Неготовое поле для шахм.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Готовое поле для шахм.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функции.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функция Sum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функция Sum результат.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функция Output.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функция Output - результат.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функция Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функция Error - результат.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Угадали%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Получилось.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Не получилось.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Файлы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Запись в файл.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Руз-т записи.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Streamreader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Резу-т StreamReader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReadAllLines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReadAllText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Как меня зовут.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Меня зовут Sentinel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Листы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Объявление листа.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функции 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функции 1 - рез-т.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функции 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Функции 2 - рез-т.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Дисплей.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Доступ разрешен.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Доступ запрещен.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Обработка исключений.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="trycatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="trycatch - рез-т.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="finnaly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="finnaly - рез-т.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Сейф.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Сейф открытый.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

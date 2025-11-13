@@ -1,0 +1,32 @@
+﻿<Window x:Class="Приложение.Window16"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Приложение"
+        mc:Ignorable="d"
+        Title="Window16" Height="495" Width="500" WindowStyle="None" Background="#FFFC6A42">
+    <Grid>
+        <TextBox x:Name="L7Text" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Height="153" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden"/>
+        <Button x:Name="Start" Content="Начать" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="25" BorderBrush="#FFFF6237" Background="White" Height="49" Width="144" Click="Start_Click"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="24,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="23" Width="75" Click="Back_Click"/>
+        <Button x:Name="NextT" Content="Далее" HorizontalAlignment="Left" Margin="250,367,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" BorderBrush="#FFFF6237" Background="White" Height="28" Width="82" Click="NextT_Click" Visibility="Hidden"   />
+        <Button x:Name="BackT" Content="Назад" HorizontalAlignment="Left" Margin="155,367,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" BorderBrush="#FFFF6237" Background="White" Height="28" Width="82" Click="BackT_Click" Visibility="Hidden"  />
+        <Button x:Name="Test" Content="Проверить знания" HorizontalAlignment="Left" Margin="321,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="31" Width="160" FontSize="14" Click="Test_Click" Visibility="Hidden" />
+        <Image x:Name="Image1" Height="36" HorizontalAlignment="Center" Width="357" VerticalAlignment="Top"  Margin="0,221,0,0" Source="/Объявление листа.png" Visibility="Hidden"  />
+        <Image x:Name="Image3" HorizontalAlignment="Center" Height="41" VerticalAlignment="Top" Width="144"  Visibility="Hidden" Margin="0,307,0,0" Source="/Функции 1 - рез-т.png"  />
+        <Image x:Name="Image4" Visibility="Hidden" HorizontalAlignment="Center" Width="384" Height="89" VerticalAlignment="Top"  Margin="0,180,0,0" Source="/Функции 2.png" />
+        <Image x:Name="Image5" Height="43" Width="100" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,272,0,0" Source="/Функции 2 - рез-т.png" />
+        <Image x:Name="imageFile"  Margin="53,29,54,351" Source="/Листы.png"  />
+        <Image x:Name="Image2" Margin="58,168,0,0" Visibility="Hidden" HorizontalAlignment="Left" Width="380" Height="134" VerticalAlignment="Top" Source="/Функции 1.png" />
+        <TextBox x:Name="TextInterac" HorizontalAlignment="Left" Margin="39,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="144" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Text="Пропускной пункт. Поступил запрос на вход в охраняемую территорию, выведите на дисплей состояние пропуска (P) в списке (S), есть ли он в нем."/>
+        <TextBox x:Name="PlaceList" HorizontalAlignment="Left" Margin="39,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" Height="70" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Foreground="Black" />
+        <Button x:Name="Check" Content="Проверить" HorizontalAlignment="Left" Margin="297,168,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="26" Width="118" FontSize="14" Visibility="Hidden" Click="Check_Click"/>
+        <Button x:Name="back1" Content="Вернуться" HorizontalAlignment="Left" Margin="24,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="22" Width="75" Click="back1_Click" Visibility="Hidden"/>
+        <Label x:Name="TeLi" Content="Место для вывода на &#xD;&#xA;дисплей" HorizontalAlignment="Left" Margin="39,221,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Visibility="Hidden" FontSize="14" Height="45" Width="183"/>
+        <Button x:Name="Interac" Content="Интерактив" HorizontalAlignment="Center" Margin="0,408,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="140" FontSize="14" Visibility="Hidden" Click="Interac_Click"/>
+        <Image x:Name="D1" Source="/Дисплей.png" Margin="232,67,0,0" HorizontalAlignment="Left" Width="249" Height="74" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Image x:Name="D2"  Margin="236,69,0,0" HorizontalAlignment="Left" Width="240" Height="69" VerticalAlignment="Top" Source="/Доступ разрешен.png" Visibility="Hidden"/>
+        <Image x:Name="D3"  Margin="236,69,0,0" HorizontalAlignment="Left" Width="240" Height="69" VerticalAlignment="Top" Source="/Доступ запрещен.png" Visibility="Hidden" />
+    </Grid>
+</Window>

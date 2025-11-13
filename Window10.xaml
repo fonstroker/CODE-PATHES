@@ -1,0 +1,42 @@
+﻿<Window x:Class="Приложение.Window10"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Приложение"
+        mc:Ignorable="d"
+        Title="Window10" Height="495" Width="500" WindowStyle="None" Background="#FFFC6A42">
+    <Grid>
+        <TextBox x:Name="L4Text" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Height="136" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden"/>
+        <Button x:Name="Start" Content="Начать" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="25" BorderBrush="#FFFF6237" Background="White" Height="49" Width="144" Click="Start_Click"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="24,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="23" Width="75" Click="Back_Click"/>
+        <Button x:Name="NextT" Content="Далее" HorizontalAlignment="Left" Margin="250,367,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" BorderBrush="#FFFF6237" Background="White" Height="28" Width="82" Click="NextT_Click" Visibility="Hidden"   />
+        <Button x:Name="BackT" Content="Назад" HorizontalAlignment="Left" Margin="155,367,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" BorderBrush="#FFFF6237" Background="White" Height="28" Width="82" Click="BackT_Click" Visibility="Hidden"  />
+        <Button x:Name="Test" Content="Проверить знания" HorizontalAlignment="Center" Margin="0,411,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="31" Width="160" FontSize="14" Click="Test_Click" Visibility="Hidden" />
+        <Image x:Name="image1" Height="48" Margin="0,200,0,0" Visibility="Hidden" HorizontalAlignment="Center" Width="318" VerticalAlignment="Top" Source="/НапримерОдномМассив.png" />
+        <Image x:Name="Image2" Margin="0,206,0,0" Visibility="Hidden" HorizontalAlignment="Center" Width="453" Height="59" VerticalAlignment="Top" Source="/НапримерПодрМассив.png" />
+        <Image x:Name="Image3" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="28"  Visibility="Hidden" Margin="238,279,0,0" Source="/РезультатРазмер.png"/>
+        <Image x:Name="Image4"  Margin="0,229,0,0" Visibility="Hidden" HorizontalAlignment="Center" Width="326" Height="45" VerticalAlignment="Top" Source="/НапримерДвумМас.png"/>
+        <Image x:Name="Image5" Height="121" Width="360" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/НапримерЗаполнениеОМ.png" />
+        <Image x:Name="Image6"  Margin="62,180,0,0" Visibility="Hidden" HorizontalAlignment="Left" Width="387" Height="154" VerticalAlignment="Top" Source="/НапримерЗаплнДВМ.png" />
+        <Image x:Name="Image7" Margin="70,160,0,0"  Visibility="Hidden" HorizontalAlignment="Left" Width="289" Height="194" VerticalAlignment="Top" Source="/НапримерСортировка.png"  />
+        <Image x:Name="Image8"  Margin="395,166,0,0" Visibility="Hidden" HorizontalAlignment="Left" Width="23" Height="182" VerticalAlignment="Top" Source="/РезультатСортир.png" />
+        <Image x:Name="Mas" Source="/Массивы.png" Margin="63,22,63,349"/>
+        <Button x:Name="Interac" Content="Интерактив" HorizontalAlignment="Center" Margin="0,408,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="140" FontSize="14" Visibility="Hidden" Click="Interac_Click"/>
+        <TextBox x:Name="PlaceMas" HorizontalAlignment="Left" Margin="21,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Height="102" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Foreground="Black" />
+        <Button x:Name="MakeBridge" Content="Построить" HorizontalAlignment="Left" Margin="280,229,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="118" FontSize="14" Visibility="Hidden" Click="MakeBridge_Click"/>
+        <Button x:Name="back1" Content="Вернуться" HorizontalAlignment="Left" Margin="24,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="22" Width="75" Click="back1_Click" Visibility="Hidden"/>
+        <Label x:Name="TeMas" Content="Место для создания&#xD;&#xA;массива" HorizontalAlignment="Left" Margin="21,232,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Visibility="Hidden" FontSize="14" Height="42" Width="172"/>
+        <TextBox x:Name="TextMas1" HorizontalAlignment="Left" Margin="21,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="182" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Text="Помогите построить мост!&#xD;&#xA;Для постройки моста нехватает 16 досок, создайте одномерный символьный массив (M) из 16 элементов."/>
+        <Image x:Name="bridge2" Source="/Готовый мост.jpg" Margin="191,30,13,286" Visibility="Hidden"/>
+        <Image x:Name="bridge1"  Margin="190,29,13,286" Source="/Неготовый мост.png" Visibility="Hidden"/>
+        <Button x:Name="Interac1" Content="Интерактив" HorizontalAlignment="Center" Margin="0,408,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="140" FontSize="14" Visibility="Hidden" Click="Interac1_Click"/>
+        <TextBox x:Name="PlaceMas2" HorizontalAlignment="Left" Margin="36,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Height="102" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Foreground="Black" />
+        <Button x:Name="MakeMap" Content="Построить" HorizontalAlignment="Left" Margin="294,252,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="26" Width="118" FontSize="14" Visibility="Hidden" Click="MakeMap_Click"/>
+        <Button x:Name="back2" Content="Вернуться" HorizontalAlignment="Left" Margin="24,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="22" Width="75" Visibility="Hidden" Click="back2_Click"/>
+        <Label x:Name="TeMas2" Content="Место для создания&#xA;двумерного массива" HorizontalAlignment="Left" Margin="36,230,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Visibility="Hidden" FontSize="14" Height="42" Width="175"/>
+        <TextBox x:Name="TextMas2" HorizontalAlignment="Left" Margin="36,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Height="177" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Text="Помогите сформировать поле для игры в шахматы!&#xD;&#xA;Для ее формирования необходимо создать двумерный целочисленный массив 8 на 8 элементов."/>
+        <Image x:Name="Map" Source="/Неготовое поле для шахм.png" Margin="248,25,43,262" Visibility="Hidden"/>
+        <Image x:Name="Map1" Margin="248,26,43,263" Source="/Готовое поле для шахм.png" Visibility="Hidden"/>
+    </Grid>
+</Window>

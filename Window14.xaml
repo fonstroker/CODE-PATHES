@@ -1,0 +1,37 @@
+﻿<Window x:Class="Приложение.Window14"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Приложение"
+        mc:Ignorable="d"
+        Title="Window14" Height="495" Width="500" WindowStyle="None" Background="#FFFC6A42">
+    <Grid>
+        <TextBox x:Name="L6Text" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Height="153" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden"/>
+        <Button x:Name="Start" Content="Начать" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="25" BorderBrush="#FFFF6237" Background="White" Height="49" Width="144" Click="Start_Click"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="24,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="23" Width="75" Click="Back_Click"/>
+        <Button x:Name="NextT" Content="Далее" HorizontalAlignment="Left" Margin="250,367,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" BorderBrush="#FFFF6237" Background="White" Height="28" Width="82" Click="NextT_Click" Visibility="Hidden"   />
+        <Button x:Name="BackT" Content="Назад" HorizontalAlignment="Left" Margin="155,367,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="14" BorderBrush="#FFFF6237" Background="White" Height="28" Width="82" Click="BackT_Click" Visibility="Hidden"  />
+        <Button x:Name="Test" Content="Проверить знания" HorizontalAlignment="Left" Margin="321,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="31" Width="160" FontSize="14" Click="Test_Click" Visibility="Hidden" />
+        <Image x:Name="Image1" Height="71" Visibility="Hidden" HorizontalAlignment="Center" Width="456" VerticalAlignment="Center" Source="/Запись в файл.png" />
+        <Image x:Name="Image2" Margin="0,288,0,0" Visibility="Hidden" HorizontalAlignment="Center" Width="56" Height="30" VerticalAlignment="Top" Source="/Руз-т записи.png" />
+        <Image x:Name="Image3" HorizontalAlignment="Center" Height="138" VerticalAlignment="Top" Width="420"  Visibility="Hidden" Margin="0,180,0,0" Source="/Streamreader.png" />
+        <Image x:Name="Image4" Visibility="Hidden" HorizontalAlignment="Left" Width="72" Height="26" VerticalAlignment="Top"  Margin="222,322,0,0" Source="/Резу-т StreamReader.png" />
+        <Image x:Name="Image5" Height="60" Width="479" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,201,0,0" Source="/ReadAllLines.png"  />
+        <Image x:Name="Image6"  Margin="214,282,0,0" Visibility="Hidden" HorizontalAlignment="Left" Width="80" Height="29" VerticalAlignment="Top" Source="/Резу-т StreamReader.png" />
+        <Image x:Name="Image7" Source="/ReadAllText.png" Margin="0,212,0,0" Visibility="Hidden" HorizontalAlignment="Center" Width="433" Height="62" VerticalAlignment="Top"/>
+        <Image x:Name="Image8"  Margin="218,288,0,0" Visibility="Hidden" HorizontalAlignment="Left" Width="80" Height="29" VerticalAlignment="Top" Source="/Резу-т StreamReader.png" />
+        <Image x:Name="imageFile"  Margin="70,28,70,331" Source="/Файлы.png" />
+        <TextBox x:Name="TextInterac" HorizontalAlignment="Left" Margin="24,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="194" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Text="Поступил файл с информацией о роботе. Считайте файл с путем patn в строку S с помощью ReadAllText и выведите информацию на экран. Все переменные объявлены"/>
+        <TextBox x:Name="PlaceFile" HorizontalAlignment="Left" Margin="24,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="42" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Foreground="Black" />
+        <Button x:Name="OpenF" Content="Открыть" HorizontalAlignment="Left" Margin="342,248,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="26" Width="118" FontSize="14" Visibility="Hidden" Click="OpenF_Click"/>
+        <Button x:Name="back1" Content="Вернуться" HorizontalAlignment="Left" Margin="24,442,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="22" Width="75" Click="back1_Click" Visibility="Hidden"/>
+        <Label x:Name="TeFile" Content="Место для чтения файла" HorizontalAlignment="Left" Margin="24,225,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Visibility="Hidden" FontSize="14" Height="27" Width="213"/>
+        <TextBox x:Name="PlaceFile1" HorizontalAlignment="Left" Margin="24,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="42" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Foreground="Black" />
+        <Label x:Name="TeFile1" Content="Место для вывода информации" HorizontalAlignment="Left" Margin="24,320,0,0" VerticalAlignment="Top" Background="White" FontFamily="Arial Black" Visibility="Hidden" FontSize="14" Height="27" Width="266"/>
+        <TextBox x:Name="Output" HorizontalAlignment="Left" Margin="195,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Height="177" FontFamily="Bahnschrift SemiBold" FontSize="16" Visibility="Hidden" Foreground="Black" />
+        <Image x:Name="R1" Source="/Как меня зовут.png" Margin="322,11,0,0" Visibility="Hidden" HorizontalAlignment="Left" Width="220" Height="220" VerticalAlignment="Top"/>
+        <Image x:Name="R2" Margin="322,10,0,0" Source="/Меня зовут Sentinel.png" Visibility="Hidden" HorizontalAlignment="Left" Width="220" Height="220" VerticalAlignment="Top"/>
+        <Button x:Name="Interac" Content="Интерактив" HorizontalAlignment="Center" Margin="0,408,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" FontFamily="Arial Black" Height="27" Width="140" FontSize="14" Visibility="Hidden" Click="Interac_Click"/>
+    </Grid>
+</Window>
